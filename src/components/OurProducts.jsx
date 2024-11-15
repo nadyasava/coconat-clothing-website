@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const cleanImageUrl = (imageUrl) => {
   if (typeof imageUrl === "string") {
-    return imageUrl.replace(/[\[\]"\\]/g, "");
+    return imageUrl.replace(/["\\[\]]/g, "");
   }
   return imageUrl;
 };

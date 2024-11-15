@@ -5,7 +5,6 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import logo from "../assets/coconat-logo.png";
 
 const Footer = () => {
-
   return (
     <footer className="site-footer">
       <div className="footer-content">
@@ -24,16 +23,16 @@ const Footer = () => {
           <h6>Our Products</h6>
           <ul className="footer-links">
             <li>
-              <a>Clothes</a>
+              <button className="footer-link-btn">Clothes</button>
             </li>
             <li>
-              <a>Joggers</a>
+              <button className="footer-link-btn">Joggers</button>
             </li>
             <li>
-              <a>Sweatpants</a>
+              <button className="footer-link-btn">Sweatpants</button>
             </li>
             <li>
-              <a>Caps</a>
+              <button className="footer-link-btn">Caps</button>
             </li>
           </ul>
         </div>

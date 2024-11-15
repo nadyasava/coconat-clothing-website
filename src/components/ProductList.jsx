@@ -4,7 +4,7 @@ import "../styles/ProductList.css";
 const ProductList = ({ products }) => {
   const cleanImageUrl = (imageUrl) => {
     if (typeof imageUrl === "string") {
-      return imageUrl.replace(/[\[\]"\\]/g, "");
+      return imageUrl.replace(/["\\[\]]/g, "");
     }
     return imageUrl;
   };
