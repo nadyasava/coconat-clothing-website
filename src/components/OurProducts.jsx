@@ -58,7 +58,6 @@ const OurProducts = ({ products }) => {
                     <div className="no-image">No Image Available</div>
                   )}
                   <h3 className="carousel-item-title">{product.title}</h3>
-                  <p className="carousel-item-price"> ${product.price}</p>
                 </div>
               );
             })}

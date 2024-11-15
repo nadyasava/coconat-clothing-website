@@ -15,7 +15,7 @@ const HomePage = () => {
     const getProducts = async () => {
       try {
         const response = await axios.get(
-          "https://api.escuelajs.co/api/v1/products?offset=0&limit=15"
+          "https://api.escuelajs.co/api/v1/products?offset=0&limit=12"
         );
         setProducts(response.data);
         setIsLoading(false);

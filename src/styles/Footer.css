@@ -1,6 +1,6 @@
 .site-footer {
   background-color: #1a1a1a;
-  padding: 60px 40px 20px;
+  padding: 10px 40px 20px;
   color: #ffffff;
   font-size: 15px;
   line-height: 1.6;
@@ -73,7 +73,8 @@
 hr {
   border: none;
   border-top: 1px solid #333;
-  margin: 30px 0;
+  width: 83%;
+  margin: 30px auto;
 }
 
 .footer-bottom {
@@ -105,10 +106,6 @@ hr {
   justify-content: center;
   border-radius: 50%;
   transition: all 0.3s ease;
-}
-
-.social-icons a:hover {
-  transform: translateY(-3px);
 }
 
 .social-icons a.email:hover {

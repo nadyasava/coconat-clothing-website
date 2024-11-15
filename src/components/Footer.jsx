@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Footer.css";
-import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import logo from '../assets/coconat-logo.png';
 
 const Footer = () => {
@@ -40,10 +40,10 @@ const Footer = () => {
           <h6>Quick Links</h6>
           <ul className="footer-links">
             <li>
-              <a href="#about-us">About Us</a>
+              <a>About Us</a>
             </li>
             <li>
-              <a href="#our-products">Our Products</a>
+              <a>Our Products</a>
             </li>
           </ul>
         </div>
