@@ -1,0 +1,74 @@
+.carousel-section {
+  text-align: center;
+  overflow: hidden;
+  background-color: #f4f4f4;
+}
+
+.our-product-title {
+  color: #222831;
+  margin-bottom: 20px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 2.3rem;
+  margin: 1.5em 0.5em 0.5em 0.5em;
+}
+
+.carousel-item-title {
+  color: #222831;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.carousel-item-price {
+  color: #393E46;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.carousel {
+  display: flex;
+  gap: 15px;
+  padding: 20px 0;
+  width: max-content;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 250px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
+}
+
+.carousel-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-image {
+  width: 100%;
+  height: 250px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.carousel-container:hover .carousel {
+  animation-play-state: paused;
+}
