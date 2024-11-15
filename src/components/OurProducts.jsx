@@ -1,10 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react';
-import '../styles/OurProducts.css';
-import Loader from './Loader';
+import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import "../styles/OurProducts.css";
+import Loader from "./Loader";
+import { FaArrowRight } from "react-icons/fa";
 
 const cleanImageUrl = (imageUrl) => {
-  if (typeof imageUrl === 'string') {
-    return imageUrl.replace(/[\[\]"\\]/g, '');
+  if (typeof imageUrl === "string") {
+    return imageUrl.replace(/[\[\]"\\]/g, "");
   }
   return imageUrl;
 };
@@ -53,7 +55,11 @@ const OurProducts = ({ products }) => {
               return (
                 <div key={`${product.id}-${index}`} className="carousel-item">
                   {imageUrl ? (
-                    <img src={imageUrl} alt={product.title} className="carousel-image" />
+                    <img
+                      src={imageUrl}
+                      alt={product.title}
+                      className="carousel-image"
+                    />
                   ) : (
                     <div className="no-image">No Image Available</div>
                   )}
@@ -65,6 +71,12 @@ const OurProducts = ({ products }) => {
         ) : (
           <Loader />
         )}
+      </div>
+      <div className="other-products-btn">
+        <Link to="/products" className="btn-other-products">
+          Other Products
+          <FaArrowRight className="arrow-icon" />
+        </Link>
       </div>
     </section>
   );

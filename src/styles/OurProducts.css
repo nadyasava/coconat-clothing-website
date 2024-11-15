@@ -65,3 +65,31 @@
 .carousel-container:hover .carousel {
   animation-play-state: paused;
 }
+
+
+.btn-other-products {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 3em;
+  color: #222831;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.arrow-icon {
+  margin-left: 10px;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.btn-other-products:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.btn-other-products:hover .arrow-icon {
+  transform: rotate(-45deg);
+}

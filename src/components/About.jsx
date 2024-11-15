@@ -4,7 +4,7 @@ import aboutimage from "../assets/about-img.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="about-container">
+    <section id="about" className="about-container" data-aos='zoom-in'>
       <div className="about-content">
         <div className="about-image">
           <img src={aboutimage} alt="About Us" />

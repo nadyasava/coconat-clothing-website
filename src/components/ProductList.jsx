@@ -21,7 +21,7 @@ const ProductList = ({ products }) => {
             const imageUrl = cleanImageUrl(product.images[0]);
             return (
               <li className="cards_item" key={product.id}>
-                <div className="card">
+                <div className="card" data-aos='fade-up'>
                   <div className="card_image">
                     <img src={imageUrl} alt={product.title} />
                     <span className="card_price">

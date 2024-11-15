@@ -1,14 +1,16 @@
 import React from "react";
 import "../styles/Footer.css";
+import { Link } from "react-router-dom";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
-import logo from '../assets/coconat-logo.png';
+import logo from "../assets/coconat-logo.png";
 
 const Footer = () => {
+
   return (
     <footer className="site-footer">
       <div className="footer-content">
         <div className="footer-section">
-        <img className="footer-logo" src={logo} alt="Coconat Store" />
+          <img className="footer-logo" src={logo} alt="Coconat Store" />
           <p className="text-justify">
             At Coconat, we are committed to offering the best selection of
             products that cater to your needs. Our team is dedicated to curating
@@ -40,10 +42,10 @@ const Footer = () => {
           <h6>Quick Links</h6>
           <ul className="footer-links">
             <li>
-              <a>About Us</a>
+              <Link to="/">About Us</Link>
             </li>
             <li>
-              <a>Our Products</a>
+              <Link to="/products">Our Products</Link>
             </li>
           </ul>
         </div>
