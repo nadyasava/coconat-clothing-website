@@ -9,9 +9,19 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleLogoClick = () => {
+    setMenuOpen(false);
+    window.location.reload();
+  };
+
   return (
     <header className="header">
-      <img src={logo} alt="Coconat Store" className="logo" />
+      <img
+        src={logo}
+        alt="Coconat Store"
+        className="logo"
+        onClick={handleLogoClick}
+      />
       <nav>
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <li><a href="/">Home</a></li>
